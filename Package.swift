@@ -20,6 +20,6 @@ let package = Package(
           name: "M3", dependencies: ["M1", "M2"]),
         .testTarget(
             name: "brokenTests",
-            dependencies: ["M3"]),
+            dependencies: ["M0", "M1", "M2", "M3"]),
     ]
 )

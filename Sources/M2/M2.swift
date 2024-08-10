@@ -3,7 +3,7 @@ extension Int: P {
   public typealias X = Bool
 }
 
-public func makeA() -> A<Int> {
+public func makeA() -> Any {
   print("returning A<Int> with size", MemoryLayout<A<Int>>.size)
-  return A(false)
+  return A<Int>(false)
 }
